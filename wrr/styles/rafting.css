@@ -22,7 +22,6 @@ body {
 }
 
 header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -31,7 +30,7 @@ header {
 }
 
 header img {
-    width: 100px;
+    width: 200px;
 }
 
 nav a {
@@ -64,9 +63,9 @@ main {
     color: var(--secondary-color);
     font-family: var(--font-heading);
     font-size: 3rem;
-    background-color: rgba(46, 41, 78, 0.7);
+    background-color: rgba(50, 37, 133, 0.7);
     /* Space Cadet with opacity */
-    padding: 10px;
+    padding: 20px;
 }
 
 .hero article {
@@ -96,10 +95,22 @@ section p {
     color: var(--primary-color);
 }
 
+figure {
+    text-align: left;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-family: var(--font-text);
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    text-align: center;
+    text-align: left;
     padding: 20px;
 }
 
