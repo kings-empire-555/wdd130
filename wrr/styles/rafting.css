@@ -1,0 +1,122 @@
+/* CSS Variables: Define Color Scheme */
+:root {
+    --primary-color: #2E294E;
+    /* Space Cadet */
+    --secondary-color: #EADEDA;
+    /* Timber Wolf */
+    --accent1-color: #FFD400;
+    /* Gold */
+    --accent2-color: #D90368;
+    /* Dogwood Rose */
+    --font-heading: 'Oswald', sans-serif;
+    --font-text: 'Montserrat', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-text);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header img {
+    width: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 15px;
+    font-family: var(--font-heading);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    color: var(--secondary-color);
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    background-color: rgba(46, 41, 78, 0.7);
+    /* Space Cadet with opacity */
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    background-color: rgba(234, 222, 218, 0.8);
+    /* Timber Wolf with opacity */
+    padding: 40px;
+    width: 700px;
+}
+
+.hero article img {
+    float: right;
+    width: 300px;
+    margin-left: 10px;
+}
+
+section h2 {
+    font-family: var(--font-heading);
+    color: var(--accent2-color);
+    /* Gold */
+}
+
+section p {
+    font-family: var(--font-text);
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.sociallinks a {
+    margin: 0 10px;
+}
+
+.sociallinks img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+nav a:focus {
+    outline: 2px solid var(--accent2-color);
+    /* Dogwood Rose */
+}
