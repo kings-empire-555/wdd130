@@ -6,7 +6,30 @@
     --border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Some example variable use in declarations. */
+/* Header and footer share the same styling */
+header,
+.grid,
+footer {
+    max-width: 840px margin: 0 auto;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 
 h1 {
     background-color: var(--heading-background-color);
@@ -21,19 +44,21 @@ aside {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main {
-    max-width: 840px;
-}
-
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;/% shorthand for white %/
 }
 
 h1 {
@@ -71,5 +96,4 @@ aside img {
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
 }
