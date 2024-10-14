@@ -1,9 +1,13 @@
 /* CSS Variables: Define Color Scheme */
 :root {
-    --primary-color: #2E294E; /* Space Cadet */
-    --secondary-color: #EADEDA; /* Timber Wolf */
-    --accent1-color: #FFD400; /* Gold */
-    --accent2-color: #D90368; /* Dogwood Rose */
+    --primary-color: #2E294E;
+    /* Space Cadet */
+    --secondary-color: #EADEDA;
+    /* Timber Wolf */
+    --accent1-color: #FFD400;
+    /* Gold */
+    --accent2-color: #D90368;
+    /* Dogwood Rose */
     --font-heading: 'Oswald', sans-serif;
     --font-text: 'Montserrat', sans-serif;
 }
@@ -23,7 +27,7 @@ header {
     grid-template-columns: 120px 1fr;
     align-items: center;
     margin: 1rem auto;
-    max-width: 1000px;
+    max-width: 1200px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 1rem;
@@ -61,7 +65,8 @@ nav {
 }
 
 .navigation a:hover {
-    color: var(--accent2-color); /* Dogwood Rose */
+    color: var(--accent2-color);
+    /* Dogwood Rose */
     font-weight: 700;
     text-decoration: underline;
 }
@@ -75,6 +80,8 @@ main {
 /* Hero Section */
 .hero {
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero img {
@@ -85,28 +92,38 @@ main {
 
 .hero h1 {
     position: absolute;
-    top: 20%;
-    align-self: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: var(--secondary-color);
     font-family: var(--font-heading);
     font-size: 3rem;
-    background-color: rgba(50, 37, 133, 0.7); /* Space Cadet with opacity */
+    background-color: rgba(50, 37, 133, 0.7);
+    /* Space Cadet with opacity */
     padding: 20px;
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 30px;
-    background-color: rgba(234, 222, 218, 0.8); /* Timber Wolf with opacity */
+    left: 0;
+    right: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(234, 222, 218, 0.8);
+    /* Timber Wolf with opacity */
     padding: 40px;
-    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .hero article img {
-    float: right;
-    width: 300px;
-    margin-left: 10px;
+    width: 200px;
+    margin-left: 20px;
+    order: 2;
 }
 
 /* History Section */
@@ -114,11 +131,40 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.history-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 900px;
+}
+
+.history-section img {
+    width: 100px;
+}
+
+.history-content p {
+    width: 3000px;
+    /* Adjust width to cover both ends of the image */
+    font-family: var(--font-text);
+    color: var(--primary-color)
 }
 
 section h2 {
     font-family: var(--font-heading);
-    color: var(--accent2-color); /* Dogwood Rose */
+    color: var(--accent2-color);
+    /* Dogwood Rose */
+}
+
+/* Adventure Section */
+.history-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section p {
@@ -137,7 +183,8 @@ section p {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px; /* Fixed margin-top */
+    margin-top: 20px;
+    /* Fixed margin-top */
 }
 
 figure {
@@ -161,19 +208,34 @@ figcaption {
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    /* Needed for positioning the social media links */
+    height: 50px;
+    /* Set a fixed height for better vertical centering */
+}
+
+footer p {
     text-align: center;
-    padding: 10px;
+    margin: 0;
+}
+
+.sociallinks {
+    position: absolute;
+    right: 20px;
+    /* Aligns social media icons to the right */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .sociallinks a {
-    margin: 0 10px;
+    margin-left: 10px;
 }
 
 .sociallinks img {
-    width: 50px;
-    vertical-align: middle;
-}
-
-nav a:focus {
-    outline: 2px solid var(--accent2-color); /* Dogwood Rose */
+    width: 40px;
+    vertical-align: center;
 }
