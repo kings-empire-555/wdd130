@@ -179,6 +179,98 @@ section p {
     align-items: center;
 }
 
+.contact-form,
+.contact-info {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 45%;
+}
+
+.contact-form h2,
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    width: calc(100% - 20px);
+    /* Adjust width to fit padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensure padding is included in width */
+}
+
+.contact-form input[type="submit"] {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #007acc;
+}
+
+.contact-info address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.contact-info iframe {
+    border: none;
+}
+
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Team Profiles Section */
+.team-profiles {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-profiles div {
+    text-align: center;
+    width: 30%;
+}
+
+.team-profiles div div {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.team-profiles div p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
 .figure-container {
     display: flex;
     justify-content: center;
@@ -209,33 +301,25 @@ footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    position: relative;
-    /* Needed for positioning the social media links */
-    height: 50px;
-    /* Set a fixed height for better vertical centering */
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+    height: 70px; /* Increase height slightly for more balance */
+    border-top: 2px solid var(--accent1-color);
 }
 
 footer p {
-    text-align: center;
     margin: 0;
 }
 
 .sociallinks {
-    position: absolute;
-    right: 20px;
-    /* Aligns social media icons to the right */
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.sociallinks a {
-    margin-left: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .sociallinks img {
-    width: 40px;
+    width: 30px;
     vertical-align: center;
 }
