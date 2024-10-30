@@ -182,6 +182,31 @@ section p {
 .contact-form,
 .contact-info {
     background-color: white;
+
+    .hero {
+        height: 80vh;
+        display: flex;
+        align-items: flex-start;
+        /* Aligns content at the top of the section */
+        justify-content: center;
+        /* Centers content horizontally */
+        text-align: center;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        padding-top: 20px;
+        /* Optional: adds space from the very top of the page */
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centers child elements in the hero-text div */
+        margin-top: 0;
+        /* Ensures it starts at the very top */
+    }
+
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -247,15 +272,17 @@ section p {
 
 /* Team Profiles Section */
 .team-profiles {
-    width: 80%;
-    margin: 40px auto;
+    width: 50%;
+    margin: 20px auto;
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .team-profiles div {
     text-align: center;
-    width: 30%;
+    width: 50%;
+    margin: 0 5px;
 }
 
 .team-profiles div div {
@@ -269,6 +296,38 @@ section p {
 .team-profiles div p {
     font-weight: bold;
     font-size: 16px;
+}
+
+/* Updated Main Content Section for Contact Us */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-form,
+.contact-info {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-form {
+    order: 1;
+}
+
+.contact-info {
+    order: 2;
+}
+
+/* Ensures iframe in the contact-info fits within the container */
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
 }
 
 .figure-container {
@@ -306,7 +365,8 @@ footer {
     max-width: 1200px;
     padding: 1rem;
     margin: 0 auto;
-    height: 70px; /* Increase height slightly for more balance */
+    height: 70px;
+    /* Increase height slightly for more balance */
     border-top: 2px solid var(--accent1-color);
 }
 
@@ -322,4 +382,137 @@ footer p {
 .sociallinks img {
     width: 30px;
     vertical-align: center;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* Default font for the body */
+    background-color: #f0f0f0;
+    /* Light background for the body */
+}
+
+header {
+    background-color: #3E3E3E;
+    /* Dark background for the header */
+    color: #FFFFFF;
+    /* White text color */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    /* Set the logo width */
+}
+
+.navigation {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+}
+
+.navigation li {
+    display: inline;
+    /* Display items in a line */
+    margin: 0 15px;
+    /* Add space between items */
+}
+
+.navigation a {
+    color: #FFFFFF;
+    /* White text for links */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    /* White text for hero section */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(46, 41, 78, 0.8);
+    /* Overlay color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-family: 'Oswald', sans-serif;
+    /* Use heading font */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-family: 'Montserrat', sans-serif;
+    /* Use text font */
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    background-color: #FF5733;
+    /* Accent color */
+    color: #FFFFFF;
+    /* White text */
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #C70039;
+    /* Darker shade for hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3E3E3E;
+    /* Dark background for footer */
+    color: #FFFFFF;
+    /* White text color */
+    text-align: center;
+    padding: 15px 0;
+}
+
+.sociallinks {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+}
+
+.sociallinks a {
+    margin: 0 10px;
+    /* Space between social links */
+}
+
+.sociallinks img {
+    width: 25px;
+    /* Set icon size */
+    vertical-align: middle;
+    /* Align icons in the middle */
 }
