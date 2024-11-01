@@ -90,6 +90,25 @@ main {
     height: auto;
 }
 
+/* Remove background color from the article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    /* Remove background color */
+    /* Remove the background color */
+}
+
+/* Adjust hero text styles if needed */
 .hero h1 {
     position: absolute;
     top: 50%;
@@ -100,31 +119,17 @@ main {
     font-family: var(--font-heading);
     font-size: 3rem;
     background-color: rgba(50, 37, 133, 0.7);
-    /* Space Cadet with opacity */
+    /* Optional: keep if you want a semi-transparent background for h1 */
     padding: 20px;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    max-width: 1100px;
-    margin: 0 auto;
-    background-color: rgba(234, 222, 218, 0.8);
-    /* Timber Wolf with opacity */
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-}
-
+/* Optional: Style for the img in article to ensure it's positioned well */
 .hero article img {
     width: 200px;
     margin-left: 20px;
     order: 2;
 }
+
 
 /* History Section */
 .history-section {
@@ -537,4 +542,341 @@ footer {
     /* Set icon size */
     vertical-align: middle;
     /* Align icons in the middle */
+}
+
+
+/* Hero Section */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero Section */
+
+.home img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    /* Center align text */
+}
+
+.home-text h1,
+.home-text h4 {
+    margin: 0;
+    /* Reset default margins */
+}
+
+.home-text h1 {
+    font-family: 'Oswald', sans-serif;
+    /* Use heading font */
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.home-text h4 {
+    font-family: 'Montserrat', sans-serif;
+    /* Use text font */
+    font-size: 1.2rem;
+    color: white;
+}
+
+.home-text .button {
+    display: inline-block;
+    /* Ensure the button is treated as a block element for centering */
+    margin-top: 15px;
+    /* Add some space above the button */
+    background-color: #f5deb3;
+    /* Cream color */
+    color: black;
+    /* Black text color */
+    padding: 10px 20px;
+    /* Button padding */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.home-text .button:hover {
+    background-color: #e5c8a2;
+    /* Slightly darker cream for hover effect */
+    color: black;
+    /* Ensure text remains black on hover */
+}
+
+
+.rivers {
+    display: flex;
+    justify-content: center;
+    /* Center items in the container */
+    padding: 20px;
+    background-color: rgba(144, 238, 144, 0.3);
+    /* Light green transparent background */
+}
+
+.river-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centers content horizontally */
+    justify-content: center;
+    /* Centers content vertically */
+    text-align: center;
+    width: 370px;
+    height: 350px;
+    /* Adjust height as needed */
+    margin: 0 10px;
+    /* Add horizontal margins to .river-card to reduce space between cards */
+}
+
+.river-image {
+    width: 200px;
+    /* Increased width */
+    height: 200px;
+    /* Increased height */
+    object-fit: cover;
+    /* Ensures the image fills the area without distortion */
+    border: 4px solid #f5deb3;
+    /* Slightly thicker creamy border */
+    border-radius: 10px;
+    /* Adds rounded corners */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    /* Increased shadow */
+    margin-bottom: 12px;
+    /* Space below the image */
+}
+
+.symbol {
+    font-size: 32px;
+    /* Larger symbol size */
+    display: block;
+    margin-bottom: 6px;
+}
+
+.river-info p {
+    font-size: 18px;
+    /* Larger font size */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    /* Darker text color for better readability */
+}
+
+
+.symbol {
+    font-size: 32px;
+    /* Larger symbol size */
+    display: block;
+    margin-bottom: 6px;
+}
+
+.river-info p {
+    font-size: 18px;
+    /* Larger font size */
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    /* Darker text color for better readability */
+}
+
+/* More Than Just The Thrill Section */
+.thrill-container {
+    background-color: #f5deb3;
+    /* Creamy color */
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.thrill-image {
+    width: 35%;
+    /* Larger width for better visibility */
+    max-width: 450px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    margin-right: 2px;
+    /* Space between image and text */
+}
+
+.thrill-text {
+    background-color: #808080;
+    /* Medium grey */
+    color: white;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    /* Light shadow for depth */
+    max-width: 400px;
+    text-align: center;
+}
+
+.thrill-text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.thrill-text p {
+    font-size: 16px;
+    line-height: 0.8;
+    color: #f5f5f5;
+    /* Light grey for readability */
+    margin-bottom: 20px;
+}
+
+.thrill-text .button {
+    background-color: #f5deb3;
+    /* Matches the container background */
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.thrill-text .button:hover {
+    background-color: #333;
+    color: #f5deb3;
+}
+
+
+
+/* Call to Action Section */
+#cta {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#cta p a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#cta p a:hover {
+    text-decoration: underline;
+}
+
+/* Trip Descriptions Section */
+#trip-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.trip {
+    flex: 1 1 calc(33.333% - 1.5rem);
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.trip h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #007bff;
+}
+
+/* Trips Table Section */
+#trip-table h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+table th,
+table td {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #trip-descriptions {
+        flex-direction: column;
+    }
+
+    .trip {
+        flex: 1 1 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }

@@ -6,63 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home | Whitewater Expeditions</title>
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Montserrat:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Header -->
     <header>
-        <div class="nav-container">
-            <img src="images/logo.jpg" alt="Whitewater Expeditions logo" class="logo">
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#trips">Trips</a>
-                <a href="#about">About Us</a>
-                <a href="#contact">Contact Us</a>
-            </nav>
-        </div>
+        <img src="images/logo.jpg" alt="Whitewater Expeditions logo" class="logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-text">
+        <!-- Home Section -->
+        <section class="home">
+            <img src="images/contact_background.jpg" alt="Whitewater Adventure">
+            <div class="home-text">
                 <h1>Have An Adventure</h1>
-                <h4>Make Memories with Dry Oar</h4>
-                <a href="#contact" class="button">Book Now</a>
+                <h4>Make Memories with Whitewater Expeditions</h4>
+                <a href="contact.html" class="button">Book Now</a>
             </div>
         </section>
 
         <!-- Rivers Section -->
         <section class="rivers">
             <div class="river-card">
-                <img src="images/employee_1.jpg" alt="River Adventure 1">
+                <img src="images/river.jpg" alt="River Adventure" class="river-image">
                 <div class="river-info">
-                    <span class="symbol">🔥</span>
+                    <span class="symbol">🌊</span>
                     <p>Rivers</p>
                 </div>
             </div>
+
             <div class="river-card">
-                <img src="images/employee_2.jpg" alt="River Adventure 2">
+                <img src="images/camp.jpg" alt="Camping Adventure" class="river-image">
                 <div class="river-info">
-                    <span class="symbol">🔥</span>
-                    <p>Rivers</p>
+                    <span class="symbol">🏕️</span>
+                    <p>Camping</p>
                 </div>
             </div>
+
             <div class="river-card">
-                <img src="images/employee_3.jpg" alt="River Adventure 3">
+                <img src="images/rapid.jpg" alt="Rapids Adventure" class="river-image">
                 <div class="river-info">
-                    <span class="symbol">🔥</span>
-                    <p>Rivers</p>
+                    <span class="symbol">🌊</span>
+                    <p>Rapids</p>
                 </div>
             </div>
         </section>
@@ -70,30 +71,36 @@
         <!-- More Than Just The Thrill Section -->
         <section class="thrill">
             <div class="thrill-container">
-                <img src="images/happy-client.jpg" alt="Scenic View" class="thrill-image">
+                <img src="images/river_view.jpg" alt="Scenic View" class="thrill-image">
                 <div class="thrill-text">
                     <h3>More Than Just The Thrill</h3>
-                    <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks, it's way more
-                        than
-                        just the rapids. It's a great way to get away from it all and relax amongst all the beauty of
-                        the
-                        great outdoors.</p>
-                    <a href="#contact" class="button">Join Us</a>
+                    <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks, it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
+                    <a href="trips.html" class="button">Join Us</a>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
         <footer>
-            <div class="footer-left">Dry Oar 2024 - Wisdom David</div>
+            <div class="footer-left">Whitewater Expeditions <p>&copy; 2024 - Wisdom David</p></div>
             <div class="footer-center">
-                <a href="#siteplan">Site Plan</a>
+                <a href="siteplan.html">Site Plan</a>
+            </div>
+            <div class="footer-center">
+                <a href="contact.html">Contact Us</a>
             </div>
             <div class="footer-right">
-                <a href="#contact">Contact Us</a>
-                <a href="https://facebook.com" class="social-icon">Facebook</a>
-                <a href="https://twitter.com" class="social-icon">Twitter</a>
-                <a href="https://instagram.com" class="social-icon">Instagram</a>
+                <nav class="sociallinks">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com">
+                        <img src="images/instagram.svg" alt="Instagram">
+                    </a>
+                </nav>
             </div>
         </footer>
 

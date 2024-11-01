@@ -4,36 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Home - Adventure Company</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trips | Whitewater Expeditions</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <img src="images/logo.jpg" alt="Rafting Company Logo">
+        <img src="images/logo.jpg" alt="Whitewater Expeditions logo" class="logo">
         <nav>
             <ul class="navigation">
-                ...
+                <li><a href="home.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section class="hero">
-            <h2>Your Adventure Awaits</h2>
-            <p>Join us for unforgettable experiences in the great outdoors!</p>
-            <a href="trips.html" class="cta">Explore Trips</a>
+        <!-- Call to Action Section -->
+        <section id="cta">
+            <h1>Ready to book your adventure? <a href="contact.html">Contact us now!</a></h1>
         </section>
 
-        <section class="company-info">
-            <h3>About Our Company</h3>
-            <p>Adventure Company has been providing thrilling adventures since 2000. We specialize in outdoor trips and
-                expeditions.</p>
+        <!-- Trip Descriptions Section -->
+        <section id="trip-descriptions">
+            <div class="trip">
+                <img src="images/beginners.jpg" alt="Scenic river trip image">
+                <h2>Scenic River Adventure</h2>
+                <p>Experience breathtaking views on a peaceful river. Perfect for beginners.</p>
+            </div>
+            <div class="trip">
+                <img src="images/intermediate.jpg" alt="Whitewater rafting trip image">
+                <h2>Whitewater Challenge</h2>
+                <p>Take on the rapids in an action-packed adventure. Intermediate level.</p>
+            </div>
+            <div class="trip">
+                <img src="images/advance.jpg" alt="Overnight trip image">
+                <h2>Overnight Expedition</h2>
+                <p>Embark on a multi-day trip under the stars. Advanced level.</p>
+            </div>
+        </section>
+
+        <!-- Trips Table Section -->
+        <section id="trip-table">
+            <h2>Available Trips</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Scenic River Adventure</td>
+                        <td>Half-Day</td>
+                        <td>Easy</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Whitewater Challenge</td>
+                        <td>Full-Day</td>
+                        <td>Intermediate</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Overnight Expedition</td>
+                        <td>2 Days</td>
+                        <td>Advanced</td>
+                        <td>$350</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Adventure Company</p>
+        <p>&copy; 2024 ⚓Whitewater Expeditions⚓ Wisdom</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
     </footer>
 </body>
 
